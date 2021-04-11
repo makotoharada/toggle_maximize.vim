@@ -117,7 +117,7 @@ function! s:StoreLayout()
 endfunction
 
 function! s:RestoreLayout()
-  if g:winrestcmd
+  if g:winrestcmd != ''
     exec "set winwidth=".s:oldwinwidth
     exec "set winheight=".s:oldwinheight
     "echo "Restoring layout: ".g:winrestcmd
